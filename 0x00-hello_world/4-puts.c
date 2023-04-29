@@ -1,7 +1,7 @@
 #include<stdio.h>
-/*
- * main - prints code using puts instead of printf
- * descripition: program prints a line of code and a new line
+/**
+ * main - prints code using puts instead
+ *
  * Return:0
 */
 int main(void)
