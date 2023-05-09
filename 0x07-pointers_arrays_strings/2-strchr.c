@@ -3,19 +3,19 @@
  * _strchr-entry point
  * @s:input
  * @c:input
- * 
+ *
  * Return: always 0
  */
 char *_strchr(char *s, char c)
 {
-	int r = 0;
-	
-	for (;s[i]>="\0"; r++)
+	int r;
+
+	for (r = 0; s[r] >= '\0'; r++)
 	{
-	  if(s[i] == c)
-	    {
-	      return (&s[1]);
-	    }
+		if (s[r] == c)
+		{
+			return (s + r);
+		}
 	}
-	return (0);
+	return ('\0');
 }
